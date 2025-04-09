@@ -168,12 +168,12 @@ int main(int argc, char* argv[]) {
     Ip my_ip;
 
     if (!get_my_mac(dev, my_mac)) {
-        fprintf(stderr, "failed to get my Mac\n");
+        printf("failed to get my Mac\n");
         return EXIT_FAILURE;
     }
 
     if ( !get_my_ip(dev, my_ip)) {
-        fprintf(stderr, "failed to get my IP\n");
+        printf("failed to get my IP\n");
         return EXIT_FAILURE;
     }
 
